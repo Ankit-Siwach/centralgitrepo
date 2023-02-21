@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         ECR_REGISTRY = '638151711596.dkr.ecr.ap-south-1.amazonaws.com'
-        APP_REPO_NAME = 'app'
+        APP_REPO_NAME = 'flask-app'
         PATH = "/usr/local/bin/:${env.PATH}"
     }
     stages {
