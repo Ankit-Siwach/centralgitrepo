@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        ECR_REGISTRY = '279070796866.dkr.ecr.ap-south-1.amazonaws.com'
+        ECR_REGISTRY = '638151711596.dkr.ecr.ap-south-1.amazonaws.com'
         APP_REPO_NAME = 'app'
         PATH = "/usr/local/bin/:${env.PATH}"
     }
