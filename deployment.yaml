@@ -6,7 +6,7 @@ metadata:
   labels:
     app: flask-app
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: flask-app
@@ -27,7 +27,7 @@ spec:
                 - arm64
       containers:
       - name: flask-container
-        image: 638151711596.dkr.ecr.ap-south-1.amazonaws.com/flask-app:28
+        image: 638151711596.dkr.ecr.ap-south-1.amazonaws.com/flask-eks:${BUILD_NUMBER}
         ports:
         - name: http
           containerPort: 3000
